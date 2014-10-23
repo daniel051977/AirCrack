@@ -1,0 +1,1 @@
+The purpose of this repo is to bring in all the learning material from the AirCrack site, put that material in pdf format for local access after a pull, and to document personal AirCrack related tests. This repo will be open for others to commit to if they desire.
