@@ -1,0 +1,16 @@
+I will assume that you will be using Debian or a Debian variant. Change the directions to match your OS.
+
+What is used in this attempt:
+	Debian box:
+		Network controller [0280]: Broadcom Corporation BCM43224 802.11a/b/g/n [14e4:4353] (rev 01) with the 'wl' wireless driver
+	OpenWRT router:
+
+Setup:
+	OpenWRT:
+		Add to and edit the /etc/config/wireless configuration file so that you have a new network interface associated with the default device (ex. radio0) and give that interface WEP encryption. It would be best if you changed the channel of that device to a channel that is being used the least within the area (ex. option channel 9)
+			(include the configuration file)
+
+
+	Debian
+		1. Start the wireless in monitor mode
+			
